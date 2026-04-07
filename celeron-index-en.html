@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Celeron UI - Exploit Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .games-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .game-btn {
+      padding: 1rem;
+      background: var(--card-bg, #2a2a2a);
+      border: 1px solid var(--border-color, #444);
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .game-btn:hover {
+      background: var(--hover-bg, #3a3a3a);
+    }
+    .status-active { border-left: 4px solid #4ade80; }
+    .status-frequent { border-left: 4px solid #facc15; }
+    .status-discontinued { border-left: 4px solid #ef4444; opacity: 0.7; }
+  </style>
+</head>
+<body>
+  <div class="page-overlay"></div>
+  <header class="main-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Celeron UI</a>
+      <nav class="nav-links">
+        <a href="#scripts">LOADER</a>
+        <a href="#fast-flags">FAST FLAGS</a>
+        <a href="#injectors">INJECTOR</a>
+        <a href="#discord">DISCORD</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="hero-tag">page made by TZE</span>
+          <h1>CELERON</h1>
+          <p>The best Roblox exploit hub. Download the loader, install fast flags and join Discord for support and updates.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#scripts">GET LOADER</a>
+            <a class="btn btn-outline" href="#discord">JOIN DISCORD</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div>
+              <span class="card-label">GET SCRIPT</span>
+              <p>Copy the loader instantly and inject it in your executor.</p>
+            </div>
+            <button class="copy-button" id="copyButton">COPY</button>
+          </div>
+          <pre id="loaderCode"><code>loadstring(game:HttpGet("https://raw.githubusercontent.com/ghostofcelleron/Celeron/refs/heads/main/Celeron's%20Loader"))()</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="supported" class="supported-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Celeron GUI</h2>
+          <p>🟢 = Active Updates. 🟡 = Frequent Updates. </p>
+        </div>
+        <div class="games-buttons">
+          <div class="game-btn status-active">Azure Latch 🟢</div>
+          <div class="game-btn status-active">Slap Battles 🟢</div>
+          <div class="game-btn status-active">Bite By Night 🟢</div>
+          <div class="game-btn status-active">Flee The Facility 🟢</div>
+          <div class="game-btn status-frequent">Jujutsu Shenanigans 🟡</div>
+          <div class="game-btn status-frequent">SAKTKIA51 🟡</div>
+          <div class="game-btn status-frequent">Life In Prison 🟡</div>
+          <div class="game-btn status-discontinued">Boxing League</div>
+          <div class="game-btn status-discontinued">Tower of Hell</div>
+          <div class="game-btn status-discontinued">Gang Up On People Simulator</div>
+          <div class="game-btn status-discontinued">Your Bizarre Adventure</div>
+          <div class="game-btn status-discontinued">Basketball: Zero</div>
+          <div class="game-btn status-discontinued">Generic Roleplay Gaem</div>
+          <div class="game-btn status-discontinued">OP Battlegrounds</div>
+          <div class="game-btn status-discontinued">Arsenal</div>
+          <div class="game-btn status-discontinued">Blue Lock: Skibidi</div>
+          <div class="game-btn status-discontinued">Neo Tennis</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="supported-executors" class="supported-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>SUPPORTED EXECUTORS</h2>
+          <p>Executors compatible with Celeron UI. Install Xeno from the link below to use with your loader.</p>
+        </div>
+        <div class="supported-grid">
+          <article class="support-card">Xeno</article>
+          <article class="support-card">Bunni</article>
+          <article class="support-card">Velocity</article>
+          <article class="support-card">Others</article>
+        </div>
+        <div class="executor-link">
+          <a class="btn btn-outline" href="https://xeno.now/download" target="_blank">INSTALL XENO</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="fast-flags" class="cards-section">
+      <div class="container section-split">
+        <div class="card card-left">
+          <h3>FAST FLAGS</h3>
+          <p>Download the complete file with optimized Roblox flags. Use the injector to install.</p>
+          <a class="btn btn-primary" href="fastflags.json" download="fastflags.json">DOWNLOAD FAST FLAGS</a>
+        </div>
+        <div class="card card-right">
+          <h3>FAST FLAGS</h3>
+          <pre><code>{
+  "DFFlagBrowserTrackerIdTelemetryEnabled": "False",
+  "DFFlagPreloadAsyncSupportTexturePack": "True",
+  "DFFlagTextureQualityOverrideEnabled": "True",
+  "DFFlagVideoCaptureServiceEnabled": "False",
+  "DFFlagSampleAndRefreshRakPing": "True",
+  "DFFlagRakNetUseSlidingWindow4": "True",
+  "DFFlagCoreScriptTelemetry2": "False",
+  "DFFlagEnableSoundPreloading": "True",
+  "DFFlagOptimizePartsInPart": "True",
+  "DFFlagDisableDPIScale": "True",
+  "DFFlagDebugPerfMode": "True"
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="injectors" class="injector-section">
+      <div class="container injector-card">
+        <div>
+          <span class="tag">Injector</span>
+          <h2>Download Injector</h2>
+          <p>Install the Roblox injector to use fast flags.</p>
+        </div>
+        <a class="btn btn-primary" href="https://www.mediafire.com/file/s3bcm84ew92aljy/fastflaginjector.exe/file" target="_blank">DOWNLOAD INJECTOR</a>
+      </div>
+    </section>
+
+    <section id="discord" class="discord-section">
+      <div class="container discord-card">
+        <div>
+          <h3>Join Discord</h3>
+          <p>Active server for support, updates, and script/fast flags sales.</p>
+        </div>
+        <a class="btn btn-outline" href="https://discord.gg/3YmdZr7UeF" target="_blank">discord.gg/3YmdZr7UeF</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Not affiliated with Roblox Corp.</p>
+      <a class="btn btn-primary" href="celeron-terms-en.html">TERMS & PRIVACY</a>
+    </div>
+  </footer>
+
+  <script>
+    const copyButton = document.getElementById('copyButton');
+    const loaderCode = document.getElementById('loaderCode').innerText;
+
+    copyButton.addEventListener('click', () => {
+      navigator.clipboard.writeText(loaderCode).then(() => {
+        copyButton.textContent = 'COPIED';
+        setTimeout(() => { copyButton.textContent = 'COPY'; }, 1500);
+      });
+    });
+  </script>
+</body>
+</html>
